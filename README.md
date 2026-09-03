@@ -60,7 +60,7 @@ The goal of this problem is to make a 10 × 10 array using the cubes of the numb
 c = (np.arange(1, 101)**3).reshape(10, 10) 
 ```
 
-`np.arange(1, 101)` uses the `arange()` function to create the numbers from 1 to 100. `**3` cubes each number, and `.reshape(10, 10)` arranges the 100 values into a 10 × 10 array and stores it in `c`. 
+`np.arange(1, 101)` uses the `arange()` function to create the numbers from 1 to 100 and excludes the last number. `**3` cubes each number, and `.reshape(10, 10)` arranges the 100 values into a 10 × 10 array and stores it in `c`. 
 
 ```python
 div_4 = c % 4 == 0
@@ -86,17 +86,15 @@ np.save("div_by_4.npy", div_by_4)
 
 `display(c.shape)` displays the shape of `c`, which should be `(10, 10)`. `display(div_by_4)` displays the cubed values that are divisible by 4. `display(div_by_4.size)` displays the number of selected values, which should be 50. Finally, `np.save("div_by_4.npy", div_by_4)` saves the selected values as `div_by_4.npy`.
 
-**C. ABOVE-MEAN SQUARES PROBLEM**
+# C. ABOVE-MEAN SQUARES PROBLEM
 The goal of this problem is to make a 6 × 6 array containing the squares of the numbers from 1 to 36. The code then finds the average of all the values and uses it to select the numbers that are greater than the average. These values are stored in `above_mean`. The result should contain 15 values and is saved as `above_mean.npy`.
 
 ---
 
-### Full Code with Explanation
-
 ```python
 S = (np.arange(1, 37)**2).reshape(6, 6)
 ```
-`np.arange(1, 37)` uses the `arange()` function to create the numbers from 1 to 36. `**2` squares each number, and `.reshape(6, 6)` arranges the 36 values into a 6 × 6 array and stores it in `S`. 
+`np.arange(1, 37)` uses the `arange()` function to create the numbers from 1 to 36 excludes the last number. `**2` squares each number, and `.reshape(6, 6)` arranges the 36 values into a 6 × 6 array and stores it in `S`. 
 
 ```python
 S_mean = np.mean(S)
