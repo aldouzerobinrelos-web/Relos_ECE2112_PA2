@@ -127,10 +127,15 @@ np.save("above_mean.npy", above_mean)
 Thank you for reading!
 
 For the main program for Programming Assignment 2 click this link
+
+https://github.com/aldouzerobinrelos-web/Relos_ECE2112_PA2/blob/main/RelosECE2112_PA2.ipynb
+
+then download, then open on Google Colab or Jupyter Notebook, and run every cell.
+
 **Readme File History:**
 
-Sept 1 2026 - Initial Readme file upload, Started and finished 1st problem started on the 2nd problem
+Sept 1 2026 - Initial Readme file upload, Started and finished 1st problem started on the 2nd problem.
 
-Sept 2 2026 - Remade 1st problem format, and finished 2nd problem
+Sept 2 2026 - Remade 1st problem format, and finished 2nd problem.
 
-Sept 3 2026 - finished work on problem 3, edited code print() to display()
+Sept 3 2026 - finished work on problem 3, edited code print() to display(), finished readme file.
